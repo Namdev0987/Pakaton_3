@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.maincontainer{
+    width: 96%;
+    height: 100vh;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./img/ui1\ \(2\).png);
+    background-position: center;
+    background-size: cover;
+  padding: 5%;
+}
+ .border{
+    width: 90%;
+    height: 100vh;
+    border: 3px solid black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    border-bottom: none;
+    padding: 2%;
+    
+} 
+.container1{
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    width: 10%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo h1{
+    color: red;
+    font-size: 35px;
+}
+.ul{
+    width: 50%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ul ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ul ul li{
+    list-style: none;
+    font-size: 20px;
+
+
+}
+.ul .btn{
+    width: 20%;
+    height: 10vh;
+}
+.btn button{
+    width: 110px;
+    padding-block: 7px;
+    background: transparent;
+    color: red;
+    border-radius: 13px;
+    border: 1px solid red;
+    font-size: 15px;
+
+}
+.container2{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding-left: 30%; */
+}
+.container2 h1{
+    font-size: 50px;
+    color: black;
+    padding-block: 12px;
+    text-align: center;
+}
+.container2 p{
+    font-size: 15px;
+    columns: gray;
+    text-align: center;
+    /* padding-left: 40px; */
+    padding-block: 15px;
+}
+.container2 button{
+    width: 160px;
+    padding-block: 15px;
+    color:white;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+
+}
+.container2 .btn2{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+@media (max-width:768px) {
+    
+.container1{
+    width: 90%;
+    height: auto;
+    align-items:start;
+    justify-content: start;
+    
+}
+    .container1 .nav{
+        padding-inline: 5%;
+        height: auto;
+    }
+    .container1 .nav .logo h1{
+        font-size: 20px;
+    }
+    .nav .ul ul li{
+        font-size: 10px;
+    }
+    .nav .btn button{
+        width: 100px;
+        padding-block: 6px;
+        font-size: 10px;
+    }
+    .container2{
+        width: 100%;
+        height: auto;
+    
+    }
+    .container2 h1{
+        font-size: 35px;
+    }
+    
+    .container2 p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .container2 .btn2{
+        /* padding-left: 12%; */
+    }
+    .container2 .btn2 button{
+        width: 150px;
+        font-size: 8px;
+        padding-block: 9px;
+    }
+
+    @media (max-width:472px) {
+        .nav{
+            width: 100%;
+            height: auto;
+            /* background: red; */
+        }
+        .container1 .nav .logo h1{
+            font-size: 10px;
+        }
+        .container1 .nav ul li{
+            font-size: 8px;
+            padding-inline: 5%;
+        }
+        .container1 .nav .btn button{
+            width: 60px;
+            font-size: 10px;
+            padding-block: 2%;
+        }
+    }
+    @media (max-width:448px) {
+        .container1 .nav ul li{
+            font-size: 5px;
+        }
+    }
+
+}
